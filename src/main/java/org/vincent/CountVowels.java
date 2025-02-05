@@ -10,7 +10,7 @@ public class CountVowels {
         if(textInput.isEmpty()){
             throw new IllegalArgumentException("Input can't be empty");
         }
-        
+
         String[] textInputArray = textInput.split("");
         int counter=0;
         for(String text: textInputArray){
