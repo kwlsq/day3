@@ -1,5 +1,6 @@
 package org.vincent;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PrimeNumberValidatorTest {
 
     @Test
+    @DisplayName("Prime number generator test with valid inputs")
     void isPrime() {
         assertFalse(PrimeNumberValidator.isPrime(1));
         assertTrue(PrimeNumberValidator.isPrime(2));

@@ -1,5 +1,6 @@
 package org.vincent;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FibonacciTest {
 
     @Test
+    @DisplayName("Fibonacci generator test with valid inputs")
     void fibonacciGenerator() {
         assertEquals("0 1 1 2 3 5", Fibonacci.fibonacciGenerator(6));
         assertEquals("0", Fibonacci.fibonacciGenerator(1));

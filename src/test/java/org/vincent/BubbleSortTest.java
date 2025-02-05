@@ -1,5 +1,6 @@
 package org.vincent;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BubbleSortTest {
 
     @Test
+    @DisplayName("Bubble sorter test with valid inputs")
     void arraySorter() {
         assertArrayEquals(
                 new int[] {11, 12, 22, 25, 34, 64, 90},

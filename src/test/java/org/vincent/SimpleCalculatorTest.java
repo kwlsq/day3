@@ -1,5 +1,6 @@
 package org.vincent;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SimpleCalculatorTest {
 
     @Test
+    @DisplayName("Calculator test with valid inputs")
     void calculator() {
         assertEquals(8, SimpleCalculator.calculator("+",new int[]{5,3}));
         assertEquals(15, SimpleCalculator.calculator("+",new int[]{5,3,1,1,2,3}));
